@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creathink Dashboard</title>
+    <link rel="stylesheet" href="style.css/styles.css">
+</head>
+
+<body>
+    <!-- Sidebar Section -->
+    <section class="sidebar">
+        <ul class="sidebar-menu">
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="#"> My Homepage</a></li>
+            <li><a href="#"> To-do List Projects</a></li>
+            <li><a href="#"> Sales Analytics</a></li>
+            <li><a href="#"> Call Center Date</a></li>
+            <li><a href="#"> Product Requirement</a></li>
+            <li><a href="#"> Accounts</a></li>
+            <li><a href="#"> Contacts</a></li>
+            <li><a href="#"> Team Design</a></li>
+
+            <!-- Dropdown for Mails -->
+            <li>
+                <a href="#"> Mails </a>
+                <ul class="submenu">
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">Sent</a></li>
+                    <li><a href="#">Drafts</a></li>
+                </ul>
+            </li>
+
+            <!-- Dropdown for Calendar -->
+            <li>
+                <a href="#"> Calendar </a>
+                <ul class="submenu">
+                    <li><a href="#">Daily</a></li>
+                    <li><a href="#">Weekly</a></li>
+                    <li><a href="#">Monthly</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#"> Cases</a></li>
+            <li><a href="#"> Activities</a></li>
+            <li><a href="#"> Document</a></li>
+            <li><a href="#"> Support</a></li>
+        </ul>
+    </section>
+
+    <!-- Header Section -->
+    <section class="header">
+        <header class="logo">CREATHINK</header>
+        <header class="search-bar">
+            <input type="text" placeholder="Search" />
+        </header>
+        <header class="icons">
+            <div class="notification-icon"></div>
+            <div class="add-icon"></div>
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Image">
+                <span class="profile-name">Firman Utina</span>
+            </div>
+        </header>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Dashboard Cards Section -->
+        <section class="cards">
+            <ul>
+                <li>Total Customers: 10,500</li>
+                <li>Team Design: Teams</li>
+                <li>Total Orders: 1,300</li>
+                <li>Total Income: $100,585</li>
+            </ul>
+        </section>
+
+        <!-- Dashboard Data Section - Top Row -->
+        <section class="data-section">
+            <div class="chart" id="monthly-income">
+                <h3>Monthly Income Chart</h3>
+                <p>Shows the income trends for the month of March 2023 with dynamic area graph data visualization.</p>
+            </div>
+
+            <div class="chart" id="design-activity">
+                <h3>Design Activity Chart</h3>
+                <p>Pie chart representing design-related work: Mobile, Website, and Illustration contributions.</p>
+            </div>
+        </section>
+
+        <!-- Dashboard Data Section - Bottom Row -->
+        <section class="data-section-bottom">
+            <div class="chart" id="customer-orders">
+                <h3>Customer Order Chart</h3>
+                <p>Bar chart comparing orders from Website, Mobile Apps, and Customer-to-Customer channels.</p>
+            </div>
+
+            <div class="chart" id="total-earnings">
+                <h3>Total Earnings from Design</h3>
+                <p>Displays breakdown of earnings from UI/UX Design (Mobile & Website), Design Logo, and Illustration.</p>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2025 Creathink Dashboard | Designed for clean analytics and performance monitoring.</p>
+        </footer>
+    </main>
+
+</body>
+
+</html>
