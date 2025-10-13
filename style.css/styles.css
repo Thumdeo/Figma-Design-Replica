@@ -1,4 +1,5 @@
- * {
+ /* ======= Global Styles ======= */
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -12,6 +13,7 @@
             color: #333;
         }
 
+        /* ======= Sidebar ======= */
         .sidebar {
             width: 260px;
             background: #ffffff;
@@ -30,47 +32,41 @@
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+            gap: 1rem;
         }
 
         .sidebar-menu li a {
             text-decoration: none;
-            color: #999;
-            font-size: 14px;
+            color: #444;
+            font-size: 15px;
             font-weight: 500;
             display: flex;
             align-items: center;
             padding: 10px 14px;
             border-radius: 10px;
             transition: all 0.3s ease;
-            gap: 10px;
         }
 
-        .sidebar-menu li a:hover {
-            background: #e9edff;
-            color: #5d6ff8;
-            font-weight: 600;
-        }
-
+        .sidebar-menu li a:hover,
         .sidebar-menu li.active a {
-            background: #5d6ff8;
-            color: #fff;
+            background: #e9edff;
+            color: #4f6ef7;
             font-weight: 600;
         }
 
+        /* Submenu (for Mails, Calendar, etc.) */
         .submenu {
             list-style: none;
             margin-top: 5px;
-            margin-left: 35px;
-            display: none;
+            margin-left: 25px;
         }
 
         .submenu li a {
-            font-size: 13px;
-            color: #999;
-            padding: 8px 10px;
+            font-size: 14px;
+            color: #666;
         }
 
+        /* ======= Header ======= */
         .header {
             position: fixed;
             left: 0;
@@ -86,40 +82,24 @@
         }
 
         .header .logo {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 700;
-            color: #5d6ff8;
+            color: #4f6ef7;
             letter-spacing: 0.5px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .logo-icon {
-            width: 32px;
-            height: 32px;
-            background: #5d6ff8;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 18px;
         }
 
         .search-bar input {
-            width: 400px;
-            padding: 10px 16px;
+            width: 320px;
+            padding: 8px 14px;
             border: 1px solid #e0e0e0;
             border-radius: 10px;
-            background: #f8f9fa;
+            background: #f5f5f5;
             outline: none;
             transition: border 0.3s ease;
-            font-size: 14px;
         }
 
         .search-bar input:focus {
-            border: 1px solid #5d6ff8;
+            border: 1px solid #4f6ef7;
             background: #fff;
         }
 
@@ -146,14 +126,13 @@
             height: 38px;
             border-radius: 50%;
             object-fit: cover;
-            background: #5d6ff8;
         }
 
         .profile-name {
             font-weight: 500;
-            font-size: 14px;
         }
 
+        /* ======= Main Content ======= */
         main {
             flex: 1;
             margin-left: 260px;
@@ -165,13 +144,16 @@
             gap: 2rem;
         }
 
+        /* ======= Summary Cards ======= */
         .cards {
             display: flex;
+            flex-direction: row;
             gap: 1.5rem;
         }
 
         .cards ul {
             display: flex;
+            flex-direction: row;
             gap: 1.5rem;
             width: 100%;
             list-style: none;
@@ -183,9 +165,10 @@
             padding: 1.5rem;
             border-radius: 14px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-            flex: 1;
-            position: relative;
+            text-align: center;
+            font-weight: 500;
             transition: transform 0.2s ease;
+            flex: 1;
         }
 
         .cards li:hover {
@@ -193,73 +176,7 @@
             box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
         }
 
-        .card-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 20px;
-            margin-bottom: 1rem;
-        }
-
-        .card-title {
-            font-size: 13px;
-            color: #999;
-            margin-bottom: 8px;
-            font-weight: 400;
-        }
-
-        .card-value {
-            font-size: 28px;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 8px;
-        }
-
-        .card-trend {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        .trend-up {
-            color: #5d6ff8;
-        }
-
-        .trend-down {
-            color: #ff6b6b;
-        }
-
-        .cards li:nth-child(2) {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .cards li:nth-child(2) .card-title,
-        .cards li:nth-child(2) .card-value {
-            color: white;
-        }
-
-        .more-btn {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            background: none;
-            border: none;
-            font-size: 20px;
-            color: #999;
-            cursor: pointer;
-        }
-
-        .cards li:nth-child(2) .more-btn {
-            color: rgba(255,255,255,0.7);
-        }
-
+        /* ======= Charts Section ======= */
         .data-section {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -284,47 +201,11 @@
             transform: translateY(-4px);
         }
 
-        .chart-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-
         .chart h3 {
             font-size: 16px;
             font-weight: 600;
             color: #222;
-        }
-
-        .chart-controls {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-
-        .chart-controls span {
-            font-size: 13px;
-            color: #999;
-            cursor: pointer;
-        }
-
-        .chart-image {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .chart-value {
-            font-size: 32px;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 0.5rem;
-        }
-
-        .chart-label {
-            font-size: 13px;
-            color: #999;
+            margin-bottom: 10px;
         }
 
         .chart p {
@@ -333,6 +214,7 @@
             line-height: 1.6;
         }
 
+        /* ======= Footer ======= */
         footer {
             background: #ffffff;
             border-top: 1px solid #e4e6ef;
@@ -343,19 +225,19 @@
             color: #777;
         }
 
+        /* ======= Scrollbar Customization ======= */
         ::-webkit-scrollbar {
             width: 8px;
         }
-
         ::-webkit-scrollbar-thumb {
             background-color: #d3d3d3;
             border-radius: 4px;
         }
-
         ::-webkit-scrollbar-thumb:hover {
             background-color: #b3b3b3;
         }
 
+        /* ======= Responsive Design ======= */
         @media (max-width: 1200px) {
             .cards ul {
                 flex-wrap: wrap;

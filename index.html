@@ -7,60 +7,62 @@
     <title>Creathink Dashboard</title>
     <link rel="stylesheet" href="style.css/styles.css">
 </head>
-<body>
-    <!-- Header Section -->
-    <section class="header">
-        <header class="logo">
-            <div class="logo-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
-            CREATHINK
-        </header>
-        <header class="search-bar">
-            <input type="text" placeholder="Search">
-        </header>
-        <header class="icons">
-            <div><i class="bi bi-bell"></i></div>
-            <div><i class="bi bi-plus-lg"></i></div>
-            <div class="profile">
-                <img src="https://i.pravatar.cc/150?img=12" alt="Profile Image">
-                <span class="profile-name">Firman Utina</span>
-                <i class="bi bi-chevron-down"></i>
-            </div>
-        </header>
-    </section>
 
+<body>
     <!-- Sidebar Section -->
     <section class="sidebar">
         <ul class="sidebar-menu">
-            <li class="active"><a href="#"><i class="bi bi-grid-fill"></i> Dashboard</a></li>
-            <li><a href="#"><i class="bi bi-house"></i> My Homepage</a></li>
-            <li><a href="#"><i class="bi bi-list-check"></i> To-do List Projects</a></li>
-            <li><a href="#"><i class="bi bi-graph-up"></i> Sales Analytics</a></li>
-            <li><a href="#"><i class="bi bi-telephone"></i> Call Center Date</a></li>
-            <li><a href="#"><i class="bi bi-box"></i> Product Requirement</a></li>
-            <li><a href="#"><i class="bi bi-people"></i> Accounts</a></li>
-            <li><a href="#"><i class="bi bi-person-lines-fill"></i> Contacts</a></li>
-            <li><a href="#"><i class="bi bi-palette"></i> Team Design</a></li>
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="#"> My Homepage</a></li>
+            <li><a href="#"> To-do List Projects</a></li>
+            <li><a href="#"> Sales Analytics</a></li>
+            <li><a href="#"> Call Center Date</a></li>
+            <li><a href="#"> Product Requirement</a></li>
+            <li><a href="#"> Accounts</a></li>
+            <li><a href="#"> Contacts</a></li>
+            <li><a href="#"> Team Design</a></li>
+
+            <!-- Dropdown for Mails -->
             <li>
-                <a href="#"><i class="bi bi-envelope"></i> Mails</a>
+                <a href="#"> Mails </a>
                 <ul class="submenu">
                     <li><a href="#">Inbox</a></li>
                     <li><a href="#">Sent</a></li>
                     <li><a href="#">Drafts</a></li>
                 </ul>
             </li>
+
+            <!-- Dropdown for Calendar -->
             <li>
-                <a href="#"><i class="bi bi-calendar"></i> Calendar</a>
+                <a href="#"> Calendar </a>
                 <ul class="submenu">
                     <li><a href="#">Daily</a></li>
                     <li><a href="#">Weekly</a></li>
                     <li><a href="#">Monthly</a></li>
                 </ul>
             </li>
-            <li><a href="#"><i class="bi bi-folder"></i> Cases</a></li>
-            <li><a href="#"><i class="bi bi-activity"></i> Activities</a></li>
-            <li><a href="#"><i class="bi bi-file-text"></i> Document</a></li>
-            <li><a href="#"><i class="bi bi-question-circle"></i> Support</a></li>
+
+            <li><a href="#"> Cases</a></li>
+            <li><a href="#"> Activities</a></li>
+            <li><a href="#"> Document</a></li>
+            <li><a href="#"> Support</a></li>
         </ul>
+    </section>
+
+    <!-- Header Section -->
+    <section class="header">
+        <header class="logo">CREATHINK</header>
+        <header class="search-bar">
+            <input type="text" placeholder="Search" />
+        </header>
+        <header class="icons">
+            <div class="notification-icon"></div>
+            <div class="add-icon"></div>
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Image">
+                <span class="profile-name">Firman Utina</span>
+            </div>
+        </header>
     </section>
 
     <!-- Main Content -->
@@ -68,80 +70,36 @@
         <!-- Dashboard Cards Section -->
         <section class="cards">
             <ul>
-                <li>
-                    <button class="more-btn"><i class="bi bi-three-dots-vertical"></i></button>
-                    <div class="card-icon" style="background: #818cf8;"><i class="bi bi-people-fill"></i></div>
-                    <div class="card-title">Total Customers</div>
-                    <div class="card-value">10,500</div>
-                    <div class="card-trend trend-up"><i class="bi bi-arrow-up-right"></i> 17%</div>
-                </li>
-                <li>
-                    <button class="more-btn"><i class="bi bi-three-dots-vertical"></i></button>
-                    <div class="card-icon" style="background: rgba(255,255,255,0.2);"><i class="bi bi-palette-fill"></i></div>
-                    <div class="card-title">Team Design</div>
-                    <div class="card-value">25</div>
-                    <div class="card-trend" style="color: white;"><i class="bi bi-arrow-up-right"></i> 20%</div>
-                </li>
-                <li>
-                    <button class="more-btn"><i class="bi bi-three-dots-vertical"></i></button>
-                    <div class="card-icon" style="background: #ff6b6b;"><i class="bi bi-cart-fill"></i></div>
-                    <div class="card-title">Total Orders</div>
-                    <div class="card-value">1,300</div>
-                    <div class="card-trend trend-down"><i class="bi bi-arrow-down-right"></i> 17%</div>
-                </li>
-                <li>
-                    <button class="more-btn"><i class="bi bi-three-dots-vertical"></i></button>
-                    <div class="card-icon" style="background: #4ecdc4;"><i class="bi bi-cash-stack"></i></div>
-                    <div class="card-title">Total Income</div>
-                    <div class="card-value">$100,585</div>
-                    <div class="card-trend trend-up"><i class="bi bi-arrow-up-right"></i> 35%</div>
-                </li>
+                <li>Total Customers: 10,500</li>
+                <li>Team Design: Teams</li>
+                <li>Total Orders: 1,300</li>
+                <li>Total Income: $100,585</li>
             </ul>
         </section>
 
         <!-- Dashboard Data Section - Top Row -->
         <section class="data-section">
             <div class="chart" id="monthly-income">
-                <div class="chart-header">
-                    <div>
-                        <h3>Monthly Income</h3>
-                        <div class="chart-value">220,342,123</div>
-                        <div class="chart-label">May</div>
-                    </div>
-                    <div class="chart-controls">
-                        <span>Previous Month</span>
-                        <span>March 2023 <i class="bi bi-calendar3"></i></span>
-                        <button class="more-btn"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                </div>
-                <img src="Images/img1.jpeg" alt="Monthly Income Chart" class="chart-image">
+                <h3>Monthly Income Chart</h3>
+                <p>Shows the income trends for the month of March 2023 with dynamic area graph data visualization.</p>
             </div>
 
             <div class="chart" id="design-activity">
-                <div class="chart-header">
-                    <h3>Design Activity</h3>
-                    <button class="more-btn"><i class="bi bi-three-dots-vertical"></i></button>
-                </div>
-                <img src="Images/img2.jpeg" alt="Design Activity Chart" class="chart-image">
+                <h3>Design Activity Chart</h3>
+                <p>Pie chart representing design-related work: Mobile, Website, and Illustration contributions.</p>
             </div>
         </section>
 
         <!-- Dashboard Data Section - Bottom Row -->
         <section class="data-section-bottom">
             <div class="chart" id="customer-orders">
-                <div class="chart-header">
-                    <h3>Customers Order</h3>
-                    <button class="more-btn"><i class="bi bi-three-dots-vertical"></i></button>
-                </div>
-                <img src="Images/img3.jpeg" alt="Customer Orders Chart" class="chart-image">
+                <h3>Customer Order Chart</h3>
+                <p>Bar chart comparing orders from Website, Mobile Apps, and Customer-to-Customer channels.</p>
             </div>
 
             <div class="chart" id="total-earnings">
-                <div class="chart-header">
-                    <h3>Total Earning from Design</h3>
-                    <button class="more-btn"><i class="bi bi-three-dots-vertical"></i></button>
-                </div>
-                <img src="Images/img4.jpeg" alt="Total Earnings Chart" class="chart-image">
+                <h3>Total Earnings from Design</h3>
+                <p>Displays breakdown of earnings from UI/UX Design (Mobile & Website), Design Logo, and Illustration.</p>
             </div>
         </section>
 
@@ -150,6 +108,7 @@
             <p>© 2025 Creathink Dashboard | Designed for clean analytics and performance monitoring.</p>
         </footer>
     </main>
+
 </body>
 
 </html>
